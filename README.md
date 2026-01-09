@@ -1,4 +1,4 @@
-# Ocotea Ambiental – Site Institucional
+# Ocotea Ambiental - Site Institucional
 
 Site institucional estático desenvolvido em **HTML, CSS e JavaScript** para a consultoria **Ocotea Ambiental**, com foco em transmitir **credibilidade, confiança e segurança técnica**.
 
