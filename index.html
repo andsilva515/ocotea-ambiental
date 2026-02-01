@@ -23,22 +23,40 @@
       <div class="menu">
         <a href="/">Início</a>
 
-        <div class="dropdown">
-          <button type="button">Sobre Nós ▾</button>
-          <div class="dropdown-panel">
+        <!-- Dropdown Sobre Nós -->
+        <div class="dropdown dropdown-about">
+          <button type="button" aria-haspopup="true" aria-expanded="false">Sobre Nós ▾</button>
+
+          <div class="dropdown-panel" id="panel-sobre">
             <a href="#">Quem Somos</a>
             <a href="#">Missão, Visão e Valores</a>
           </div>
         </div>
 
-        <div class="dropdown">
-          <button type="button">Serviços ▾</button>
-          <div class="dropdown-panel">
-            <a href="#">Regularização Ambiental</a>
-            <a href="#">Inventário Florestal e Supressão Vegetal</a>
-            <a href="#">Agrimensura e Georreferenciamento</a>
-            <a href="#">Regularização Fundiária</a>
-            <a href="#">Crédito Rural</a>
+        <!-- Dropdown Serviços -->
+        <div class="dropdown dropdown-services-wrap">
+          <button type="button" aria-haspopup="true" aria-expanded="false">Serviços ▾</button>
+
+          <div class="dropdown-panel dropdown-services" id="panel-servicos"> 
+            <div class="dropdown-group">
+              <span class="dropdown-title">🌱 Meio Ambiente</span>
+                <a href="#">Inventário Florestal de Espécies Nativas e Exóticas</a>
+                <a href="#">Autorização para Intervenção Ambiental (com ou sem supressão)</a>
+                <a href="#">Projeto de Recuperação de Áreas Degradadas (PRAD / PRADA)</a>
+                <a href="#">Projeto Técnico de Reconstituição da Flora (PTRF)</a>
+                <a href="#">Projetos de Compensação Ambiental</a>
+                <a href="#">Diagnóstico de Reserva Legal e APP</a>
+                <a href="#">Declaração de Colheita de Florestas Plantadas</a>
+            </div>
+
+            <div class="dropdown-group">
+              <span class="dropdown-title">🏡 Regularização de Imóveis</span>
+                <a href="#">Regularização Ambiental de Imóveis Rurais e Urbanos</a>
+                <a href="#">Cadastro Ambiental Rural (CAR)</a>
+                <a href="#">Análise de Documentação de Propriedades</a>
+                <a href="#">Certidões de Registro de Imóveis</a>
+                <a href="#">Regularização junto aos Órgãos Competentes</a>
+            </div>
           </div>
         </div>
 
@@ -46,19 +64,14 @@
         <a href="#">Fale Conosco</a>
       </div>
 
-
       <div class="cta">
-       <!-- <a class="btn btn-outline" href="#">Solicitar Orçamento</a>-->
         <a class="btn btn-primary" href="#" target="_blank" rel="noopener">WhatsApp</a>
       </div>
-
-
     </nav>
   </div>
 </header>
 
 <main>
-  <!-- Hero -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-card">
@@ -79,13 +92,11 @@
         <p class="small" style="margin-top:12px;">
           Atendimento em até 1 dia útil • Documentação completa • Transparência em cada etapa
         </p>
-
       </div>
 
       <div class="hero-photo">
         <img src="/assets/img/hero.png" alt="Equipe técnica em campo" />
       </div>
-
     </div>
   </section>
 
@@ -122,12 +133,7 @@
           <h3>Regularização Fundiária</h3>
           <p>Suporte técnico-documental para regularização urbana e rural.</p>
         </a>
-
-        <a class="card" href="#">
-          <span class="badge">Rural</span>
-          <h3>Crédito Rural</h3>
-          <p>Apoio técnico e documentação para viabilizar processos e exigências.</p>
-        </a>
+   
 
         <div class="card">
           <span class="badge">Processo</span>
@@ -143,26 +149,18 @@
   <div class="container footer-grid">
     <div>
       <h3 style="margin-bottom:6px;">Ocotea Ambiental</h3>
-      <p class="small">  O nome OCOTEA tem origem em um gênero de árvores nativas, conhecidas por suas raízes profundas, resistência e equilíbrio com o ambiente em que estão inseridas. </p>
-        
+      <p class="small">  O nome OCOTEA tem origem em um gênero de árvores nativas, conhecidas por suas raízes profundas, resistência e equilíbrio com o ambiente em que estão inseridas. </p>       
       
+         <p class="small"> Assim como a natureza atua de forma integrada e duradoura, a OCOTEA AMBIENTAL nasce com o propósito de construir soluções sólidas, responsáveis e alinhadas ao território, unindo conhecimento técnico, respeito ao meio ambiente e proximidade com o cliente.</p>        
 
-         <p class="small"> Assim como a natureza atua de forma integrada e duradoura, a OCOTEA AMBIENTAL nasce com o propósito de construir soluções sólidas, responsáveis e alinhadas ao território, unindo conhecimento técnico, respeito ao meio ambiente e proximidade com o cliente.</p>
-
-        
-
-         <p class="small">Cada projeto é conduzido com cuidado, transparência e compromisso com o presente e o futuro, valorizando a terra, as pessoas e o desenvolvimento sustentável.</p>
-        
-
-
-      
+         <p class="small">Cada projeto é conduzido com cuidado, transparência e compromisso com o presente e o futuro, valorizando a terra, as pessoas e o desenvolvimento sustentável.</p> 
+     
     </div>
     <div>
       <h3 style="margin-bottom:6px;">Contato</h3>
       <p class="small">Telefone: (35) 9 9887-0333</p>
       <p class="small"><a href="mailto:atendimento@ocoteaambiental.com.br">E-mail: atendimento@ocoteaambiental.com.br</a></p>
-      <p class="small"><a href="https://www.instagram.com/ocotea.ambiental" target="_blank">Instagram: @ocotea.ambiental</a></p>
-      <p class="small"><a href="https://www.linkedin.com/company/ocotea-ambiental" target="_blank">Linkedin: /ocotea-ambiental</a></p>
+      <p class="small"><a href="https://www.instagram.com/ocotea.ambiental" target="_blank">Instagram: @ocotea.ambiental</a></p>   
     </div>
     <div>
       <h3 style="margin-bottom:6px;">Links</h3>
