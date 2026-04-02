@@ -1,0 +1,152 @@
+/* ===== CONTATO ===== */
+.contact-page{
+  padding: 56px 0;
+}
+
+.contact-header{
+  max-width: 760px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.contact-header h1{
+  font-size: 38px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.contact-header p{
+  font-size: 16px;
+}
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.contact-card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.contact-info h2{
+  margin-bottom: 18px;
+}
+
+.contact-info-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-info-item{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-info-item strong{
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.contact-info-item a{
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea{
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus{
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(47,94,58,.10);
+}
+
+.form-field textarea{
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-actions{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-message{
+  min-height: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form-message.success{
+  color: var(--brand);
+}
+
+.form-message.error{
+  color: #b42318;
+}
+
+.btn[disabled]{
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .form-row{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header h1{
+    font-size: 30px;
+  }
+}
