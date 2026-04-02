@@ -485,3 +485,69 @@ a{
   } 
 
 }
+
+/* ===== Serviços no padrão do Sobre Nós (colapsável) ===== */
+
+.dropdown-services-wrap .dropdown-services-panel{
+  /* tamanho parecido com Sobre Nós (não gigante) */
+  min-width: 320px;
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  padding: 8px;
+}
+
+/* Botão da categoria (parecido com link do dropdown) */
+.svc-cat{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+  padding: 10px 10px;
+  border-radius: 12px;
+}
+
+.svc-cat:hover{
+  background: rgba(47,94,58,.08);
+}
+
+.svc-caret{
+  opacity: .7;
+  transition: transform .15s ease;
+}
+
+/* Itens dentro da categoria (reusa o padrão do Sobre Nós) */
+.svc-items{
+  padding-left: 8px;
+  margin: 4px 0 8px;
+  border-left: 1px solid var(--border);
+}
+
+.svc-items a{
+  display: block;
+  padding: 9px 10px;
+  border-radius: 12px;
+
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.svc-items a:hover{
+  background: rgba(47,94,58,.08);
+}
+
+/* Estado aberto */
+.svc-cat[aria-expanded="true"] .svc-caret{
+  transform: rotate(180deg);
+}
