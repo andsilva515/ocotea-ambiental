@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".dropdown.open").forEach(d => d.classList.remove("open"));
-});
-
 (function () {
   const dropdowns = document.querySelectorAll(".dropdown");
 
@@ -13,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // garante tudo fechado ao carregar
+  closeAll();
+
   dropdowns.forEach((d) => {
     const btn = d.querySelector("button");
 
@@ -22,10 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const willOpen = !d.classList.contains("open");
 
-      // fecha os outros
       closeAll();
 
-      // abre o atual se necessário
       if (willOpen) {
         d.classList.add("open");
         btn.setAttribute("aria-expanded", "true");
@@ -39,5 +36,40 @@ document.addEventListener("DOMContentLoaded", () => {
   // ESC fecha
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeAll();
+  });
+
+  // clicar em links do dropdown fecha tudo
+  document.querySelectorAll(".dropdown-panel a").forEach((link) => {
+    link.addEventListener("click", () => closeAll());
+  });
+
+  // ===== Categorias colapsáveis no menu Serviços =====
+  const serviceCategories = document.querySelectorAll(".dropdown-services-panel .svc-cat");
+
+  serviceCategories.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation(); // não fecha o dropdown principal
+
+      const panel = btn.nextElementSibling;
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+      // fecha todas
+      serviceCategories.forEach((b) => {
+        b.setAttribute("aria-expanded", "false");
+        const p = b.nextElementSibling;
+        if (p && p.classList.contains("svc-items")) {
+          p.hidden = true;
+        }
+      });
+
+      // abre a atual
+      if (!isOpen) {
+        btn.setAttribute("aria-expanded", "true");
+        if (panel && panel.classList.contains("svc-items")) {
+          panel.hidden = false;
+        }
+      }
+    });
   });
 })();
