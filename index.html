@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -33,31 +33,43 @@
           </div>
         </div>
 
-        <!-- Dropdown Serviços -->
+        <!-- Dropdown Serviços (padrão Sobre Nós + categorias colapsáveis) -->
         <div class="dropdown dropdown-services-wrap">
-          <button type="button" aria-haspopup="true" aria-expanded="false">Serviços ▾</button>
+        <button type="button" aria-haspopup="true" aria-expanded="false">Serviços ▾</button>
 
-          <div class="dropdown-panel dropdown-services" id="panel-servicos"> 
-            <div class="dropdown-group">
-              <span class="dropdown-title">🌱 Meio Ambiente</span>
-                <a href="#">Inventário Florestal de Espécies Nativas e Exóticas</a>
-                <a href="#">Autorização para Intervenção Ambiental (com ou sem supressão)</a>
-                <a href="#">Projeto de Recuperação de Áreas Degradadas (PRAD / PRADA)</a>
-                <a href="#">Projeto Técnico de Reconstituição da Flora (PTRF)</a>
-                <a href="#">Projetos de Compensação Ambiental</a>
-                <a href="#">Diagnóstico de Reserva Legal e APP</a>
-                <a href="#">Declaração de Colheita de Florestas Plantadas</a>
+        <div class="dropdown-panel dropdown-services-panel">
+
+            <!-- Categoria 1 -->
+            <button class="svc-cat" type="button" aria-expanded="false">
+            Meio Ambiente
+            <span class="svc-caret">▾</span>
+            </button>
+
+            <div class="svc-items" hidden>
+            <a href="#">Inventário Florestal de Espécies Nativas e Exóticas</a>
+            <a href="#">Autorização para Intervenção Ambiental (com ou sem supressão)</a>
+            <a href="#">Projeto de Recuperação de Áreas Degradadas (PRAD / PRADA)</a>
+            <a href="#">Projeto Técnico de Reconstituição da Flora (PTRF)</a>
+            <a href="#">Projetos de Compensação Ambiental</a>
+            <a href="#">Diagnóstico de Reserva Legal e APP</a>
+            <a href="#">Declaração de Colheita de Florestas Plantadas</a>
             </div>
 
-            <div class="dropdown-group">
-              <span class="dropdown-title">🏡 Regularização de Imóveis</span>
-                <a href="#">Regularização Ambiental de Imóveis Rurais e Urbanos</a>
-                <a href="#">Cadastro Ambiental Rural (CAR)</a>
-                <a href="#">Análise de Documentação de Propriedades</a>
-                <a href="#">Certidões de Registro de Imóveis</a>
-                <a href="#">Regularização junto aos Órgãos Competentes</a>
+            <!-- Categoria 2 -->
+            <button class="svc-cat" type="button" aria-expanded="false">
+            Regularização de Imóveis
+            <span class="svc-caret">▾</span>
+            </button>
+
+            <div class="svc-items" hidden>
+            <a href="#">Regularização Ambiental de Imóveis Rurais e Urbanos</a>
+            <a href="#">Cadastro Ambiental Rural (CAR)</a>
+            <a href="#">Análise de Documentação de Propriedades</a>
+            <a href="#">Certidões de Registro de Imóveis</a>
+            <a href="#">Regularização junto aos Órgãos Competentes</a>
             </div>
-          </div>
+
+        </div>
         </div>
 
         <a href="#">Portfólio</a>
