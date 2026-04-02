@@ -1,0 +1,97 @@
+<section class="contact-page">
+  <div class="container">
+    <div class="contact-header">
+      <span class="kicker">Fale Conosco</span>
+      <h1>Entre em contato com a Ocotea Ambiental</h1>
+      <p>
+        Tire dúvidas, solicite um orçamento ou fale com nossa equipe.
+        Respondemos o mais breve possível.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card contact-info">
+        <h2>Informações de contato</h2>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <strong>Telefone</strong>
+            <a href="https://wa.me/5535998870333" target="_blank" rel="noopener">
+              (35) 9 9887-0333
+            </a>
+          </div>
+
+          <div class="contact-info-item">
+            <strong>E-mail</strong>
+            <a href="mailto:atendimento@ocoteaambiental.com.br">
+              atendimento@ocoteaambiental.com.br
+            </a>
+          </div>
+
+          <div class="contact-info-item">
+            <strong>Instagram</strong>
+            <a href="https://www.instagram.com/ocotea.ambiental" target="_blank" rel="noopener">
+              @ocotea.ambiental
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+
+            <div class="form-field">
+              <label for="telefone">Telefone</label>
+              <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+            </div>
+
+            <div class="form-field">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione</option>
+                <option value="Orçamento">Orçamento</option>
+                <option value="Dúvida">Dúvida</option>
+                <option value="Serviços Ambientais">Serviços Ambientais</option>
+                <option value="Regularização de Imóveis">Regularização de Imóveis</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="6"
+              placeholder="Descreva sua necessidade"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Enviar mensagem
+            </button>
+          </div>
+
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/js/contato.js"></script>
