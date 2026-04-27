@@ -624,6 +624,7 @@ a{
   font-size: 13px; 
   color: var(--muted); 
   text-align: justify;
+
 }
 
 */
@@ -683,24 +684,35 @@ a{
   }
 }
 
+@media (min-width: 901px){
 
+  .footer-grid{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr; /* lado a lado */
+    gap: 48px;
+    align-items: flex-start;
+  }
 
+}
 
+@media (min-width: 901px){
 
+  .footer{
+    padding: 40px 0 24px;
+  }
 
+  .footer h3{
+    font-size: 18px;
+    margin-bottom: 10px !important;
+  }
 
+  .footer .small{
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* Mobile */
 
