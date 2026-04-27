@@ -605,6 +605,8 @@ a{
 
 /* Footer */
 
+/*
+
 .footer{
   margin-top: 40px;
   padding: 26px 0;
@@ -622,8 +624,83 @@ a{
   font-size: 13px; 
   color: var(--muted); 
   text-align: justify;
- /* margin: 0 0 4px 0;  */
 }
+
+*/
+
+/* =========================
+   FOOTER DESKTOP PREMIUM
+========================= */
+@media (min-width: 901px){
+
+  .footer{
+    margin-top: 72px;
+    padding: 42px 0 26px;
+    background: rgba(255,255,255,.72);
+  }
+
+  .footer-grid{
+    grid-template-columns: 1.3fr 1fr .8fr;
+    gap: 72px;
+    align-items: flex-start;
+  }
+
+  .footer h3{
+    font-size: 20px;
+    margin-bottom: 14px !important;
+  }
+
+  .footer .small{
+    font-size: 14px;
+    line-height: 1.65;
+    text-align: left;
+    margin: 0 0 10px;
+  }
+
+  .footer a{
+    color: var(--muted);
+    transition: color .18s ease;
+  }
+
+  .footer a:hover{
+    color: var(--brand);
+  }
+
+  .footer > .container:last-child{
+    margin-top: 34px !important;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .footer > .container:last-child .small{
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Mobile */
 
@@ -662,7 +739,7 @@ a{
   .footer .small{
     font-size: 15px;
     line-height: 1.65;
-    text-align: left;
+    text-align: justify;
   }
 
   .footer a{
