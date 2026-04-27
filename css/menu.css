@@ -1,0 +1,362 @@
+.menu{
+  display:flex;
+  align-items:center;
+  gap: 14px;
+}
+
+.menu > a, .menu button{
+  font-weight: 600;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.menu > a:hover, .menu button:hover{
+  background: rgba(47,94,58,.08);
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-panel{
+  position: absolute;
+  top: calc(100% + 10px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 8px;
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown-panel a{
+  display:block;
+  padding: 10px 10px;
+  border-radius: 12px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dropdown-panel a:hover{
+  background: rgba(47,94,58,.08);
+}
+
+.dropdown.open .dropdown-panel{
+  display:block;
+}
+
+.dropdown button{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown.open button{
+  background: rgba(47,94,58,.08);
+}
+
+.dropdown-about .dropdown-panel{
+  left: 0;
+  right: auto;
+  min-width: 220px;
+  z-index: 1100; /* 🔑 fica acima do header, mas abaixo do mega menu */
+}
+
+/* Mega menu Serviços — alinhado ao site */
+.dropdown-services-wrap .dropdown-panel{
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 480px;                 /* ✅ tamanho “bom” desktop */
+  /* width: min(var(--max), calc(100vw - 32px)); */  
+  padding: 16px; 
+  pointer-events: auto;  /* 🔑 impede sobreposição confusa */
+  border-radius: 16px;
+}
+
+/* .dropdown-services{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  min-width: 0;
+  padding: 0;
+} */
+
+.dropdown-services{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;                 /* mais respiro */
+  padding: 0;       /* ✅ o padding já está no panel */
+  min-width: 0;
+}
+
+.dropdown-group{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* .dropdown-title{
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--brand);
+  padding: 6px 10px;
+  margin-bottom: 4px;
+} */
+
+/* Título da categoria */
+.dropdown-title{
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+
+  color: var(--brand);
+  padding: 6px 10px;
+  margin-bottom: 6px;
+
+  border-bottom: 1px solid var(--border); /* divisor elegante */
+}
+
+/* .dropdown-services a{
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.dropdown-services a:hover{
+  background: rgba(47,94,58,.08);
+} */
+
+/* Links */
+.dropdown-services a{
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+/* Hover */
+.dropdown-services a:hover{
+  background: rgba(47,94,58,.08);
+}
+
+/* 🔒 trava: painel sempre escondido até .open */
+.dropdown .dropdown-panel{
+  display: none !important;
+}
+
+.dropdown.open > .dropdown-panel{
+  display: block !important;
+}
+
+/* =========================
+   PADRÃO TIPOGRÁFICO SUBMENUS
+========================= */
+.dropdown-panel{
+  border: 1px solid var(--border);   /* se quiser sem borda, troque por: border: 0; */
+  padding: 10px;
+}
+
+/* links dos submenus */
+.dropdown-panel a{
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+
+  color: var(--text);
+  padding: 9px 10px;
+  border-radius: 10px;
+}
+
+/* hover mais suave e corporativo */
+.dropdown-panel a:hover{
+  background: rgba(47,94,58,.08);
+}
+
+/* títulos de categoria (Meio Ambiente / Regularização...) */
+.dropdown-title{
+  display: block;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+
+  color: var(--brand);
+  padding: 8px 10px 6px;
+  margin: 2px 0 6px;
+}
+
+/* separador visual entre grupos (opcional, fica bonito) 
+.dropdown-group + .dropdown-group{
+  border-left: 1px solid var(--border);
+  padding-left: 12px;
+  margin-left: 12px;
+}
+*/
+
+.cta{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.btn-primary{
+  background: var(--brand);
+  border-color: var(--brand);
+  color: white;
+}
+
+.btn-primary:hover{
+  filter: brightness(.95);
+}
+
+.btn-outline:hover{
+  background: rgba(47,94,58,.08);
+}
+
+
+/* ===== Serviços no padrão do Sobre Nós (colapsável) ===== */
+
+.dropdown-services-wrap .dropdown-services-panel{
+  /* tamanho parecido com Sobre Nós (não gigante) */
+  min-width: 320px;
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  padding: 8px;
+}
+
+/* Botão da categoria (parecido com link do dropdown) */
+.svc-cat{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+  padding: 10px 10px;
+  border-radius: 12px;
+}
+
+.svc-cat:hover{
+  background: rgba(47,94,58,.08);
+}
+
+.svc-caret{
+  opacity: .7;
+  transition: transform .15s ease;
+}
+
+/* Itens dentro da categoria (reusa o padrão do Sobre Nós) */
+.svc-items{
+  padding-left: 8px;
+  margin: 4px 0 8px;
+  border-left: 1px solid var(--border);
+}
+
+.svc-items a{
+  display: block;
+  padding: 9px 10px;
+  border-radius: 12px;
+
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.svc-items a:hover{
+  background: rgba(47,94,58,.08);
+}
+
+/* Estado aberto */
+.svc-cat[aria-expanded="true"] .svc-caret{
+  transform: rotate(180deg);
+}
+
+/* Menu mobile */ 
+
+.mobile-toggle{
+  display: none;
+  border: 0;
+  background: var(--brand);
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  padding: 12px 16px;
+}
+
+.mobile-menu a{
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.mobile-menu a:hover{
+  background: rgba(47,94,58,.08);
+}
+
+.mobile-menu.open{
+  display: flex;
+}
+
+@media (max-width: 900px){
+  .menu{
+    display: none;
+  }
+
+  .cta{
+    display: none;
+  }
+
+  .mobile-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
