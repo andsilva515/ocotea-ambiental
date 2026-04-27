@@ -604,6 +604,10 @@ a{
   font-size: 12px;
 }
 
+.one-col{
+  grid-template-columns: 1fr;
+}
+
 /* Footer */
 
 /*
