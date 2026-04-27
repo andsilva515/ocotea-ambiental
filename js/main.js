@@ -73,6 +73,7 @@
     });
   });
 
+  // botão flutuante voltar ao top
   const backToTop = document.getElementById("backToTop");
 
   if (backToTop) {
@@ -91,4 +92,26 @@
       });
     });
   }
+
+  // menu mobilte
+
+  const mobileToggle = document.getElementById("mobileToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+
+      const isOpen = mobileMenu.classList.contains("open");
+      mobileToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        mobileToggle.textContent = "☰";
+      });
+    });
+  }
+
 })();
