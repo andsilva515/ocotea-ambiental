@@ -15,14 +15,6 @@
   --max: 1120px;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
-section[id]{
-  scroll-margin-top: 110px;
-}
-
 *{ 
   box-sizing:border-box;
 }
