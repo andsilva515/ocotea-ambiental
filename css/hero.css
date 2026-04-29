@@ -21,17 +21,7 @@
   justify-content: center;
 }
 
-.kicker{
-  display:inline-flex;
-  gap: 8px;
-  align-items:center;
-  font-weight: 800;
-  color: var(--brand);
-  background: rgba(47,94,58,.08);
-  padding: 6px 10px;
-  border-radius: 999px;
-  margin-bottom: 12px;
-}
+
 
 .hero h1{
   font-size: 38px;

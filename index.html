@@ -29,7 +29,7 @@
       </a>
 
       <div class="menu">
-        <a href="#inicio">Início</a>
+        <a href="/index.html">Início</a>
 
         <div class="dropdown dropdown-about">
           <button type="button" aria-haspopup="true" aria-expanded="false">
@@ -37,8 +37,8 @@
           </button>
 
           <div class="dropdown-panel">
-            <a href="#quem-somos">Quem Somos</a>
-            <a href="#missao-visao-valores">Missão, Visão e Valores</a>
+            <a href="/sobre/quem-somos.html">Quem Somos</a>
+            <a href="/sobre/missao-visao-valores.html">Missão, Visão e Valores</a>
           </div>
         </div>
 
@@ -48,38 +48,75 @@
           </button>
 
           <div class="dropdown-panel dropdown-services-panel">
+
             <button class="svc-cat" type="button" aria-expanded="false">
-              Meio Ambiente
+              Serviços Ambientais
               <span class="svc-caret">▾</span>
             </button>
 
             <div class="svc-items" hidden>
-              <a href="#meio-ambiente">Inventário Florestal</a>
-              <a href="#meio-ambiente">Intervenção Ambiental</a>
-              <a href="#meio-ambiente">PRAD / PRADA</a>
-              <a href="#meio-ambiente">PTRF</a>
-              <a href="#meio-ambiente">Compensação Ambiental</a>
-              <a href="#meio-ambiente">Reserva Legal e APP</a>
-              <a href="#meio-ambiente">Colheita de Florestas Plantadas</a>
+              <a href="#">Inventário Florestal</a>
+              <a href="#">Diagnóstico de APP e Reserva Legal</a>
+              <a href="#">Recuperação de áreas degradadas (PRAD)</a>
+              <a href="#">Projetos de compensação ambiental</a>
+              <a href="#">Licença para corte de árvores</a>
+              <a href="#">Licença para queima controlada</a>
+              <a href="#">Projetos de Intervenção Ambiental</a>
             </div>
 
             <button class="svc-cat" type="button" aria-expanded="false">
-              Regularização de Imóveis
+              Regularização Rural
+              <span class="svc-caret">▾</span>
+            </button>
+
+             <div class="svc-items" hidden>
+              <a href="#">Cadastro Ambiental Rural (CAR)</a>
+              <a href="#">Retificação do CAR</a>
+              <a href="#">Programa de Regularização Ambiental (PRA)</a>
+              <a href="#">Reserva Legal e APP</a>            
+            </div>
+
+            <button class="svc-cat" type="button" aria-expanded="false">
+              Recursos Hídricos
               <span class="svc-caret">▾</span>
             </button>
 
             <div class="svc-items" hidden>
-              <a href="#regularizacao-imoveis">Regularização Ambiental</a>
-              <a href="#regularizacao-imoveis">Cadastro Ambiental Rural</a>
-              <a href="#regularizacao-imoveis">Análise de Documentação</a>
-              <a href="#regularizacao-imoveis">Certidões de Registro</a>
-              <a href="#regularizacao-imoveis">Órgãos Competentes</a>
+              <a href="#">Outroga de uso da água</a>
+              <a href="#">Cadastro de uso insignificante</a>
+              <a href="#">Declaração de uso de recursos hídricos (DAURH)</a>   
             </div>
+
+
+             <button class="svc-cat" type="button" aria-expanded="false">
+              Licenciamento Ambiental
+              <span class="svc-caret">▾</span>
+            </button>
+
+            <div class="svc-items" hidden>
+              <a href="#">LI, LP e LO</a>
+              <a href="#">Licença Ambiental Simplificada (LAS - Cadastro e LAS - RAS)</a>
+              <a href="#">EIA/ RIMA</a>   
+            </div>
+
+            <button class="svc-cat" type="button" aria-expanded="false">
+              Gestão de Resíduos
+              <span class="svc-caret">▾</span>
+            </button>
+
+            <div class="svc-items" hidden>
+              <a href="#">Cadastro Técnico Federal - CTF/APP (IBAMA)</a>
+              <a href="#">Elaboração e envio do RAPP</a>
+              <a href="#">Regularização de atividades potencialmente poluidoras</a>   
+              <a href="#">Elaboração de PGRS</a>
+              <a href="#">Implantação do MTR (SINIR)</a> 
+            </div>
+
           </div>
         </div>
 
-        <a href="#portfolio">Portfólio</a>
-        <a href="#contato">Fale Conosco</a>
+        <a href="/portfolio.html">Portfólio</a>
+        <a href="/contato.html">Fale Conosco</a>
       </div>
 
       <div class="cta">
@@ -94,15 +131,17 @@
 
     </nav>
 
+    <!-- Menu Mobile-->
+
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#inicio">Início</a>
-      <a href="#quem-somos">Quem Somos</a>
-      <a href="#missao-visao-valores">Missão, Visão e Valores</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#meio-ambiente">Meio Ambiente</a>
-      <a href="#regularizacao-imoveis">Regularização de Imóveis</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#contato">Fale Conosco</a>      
+      <a href="/index.html">Início</a>
+      <a href="/sobre/quem-somos.html">Quem Somos</a>
+      <a href="/sobre/missao-visao-valores.html">Missão, Visão e Valores</a>
+
+      <a href="#">Serviços</a>     
+
+      <a href="/portfolio.html">Portfólio</a>
+      <a href="/contato.html">Fale Conosco</a>      
     </div>
 
   </div>
@@ -110,11 +149,10 @@
 
 <main>
 
-  <!-- INÍCIO -->
+  <!-- Hero -->
   <section id="inicio" class="hero">
-    <div class="container hero-grid">
-
     
+    <div class="container hero-grid">   
 
       <div class="hero-slider" id="heroSlider">
 
@@ -218,96 +256,7 @@
     </div>
   </section>
 
-  <!-- MEIO AMBIENTE -->
-  <section id="meio-ambiente" class="section">
-    <div class="container">
-      <div class="section-heading">
-        <span class="section-tag">Categoria</span>
-        <h2>Meio Ambiente</h2>
-        <p>
-          Serviços voltados ao diagnóstico, regularização, recuperação e planejamento ambiental.
-        </p>
-      </div>
-
-      <div class="grid three-cols">
-        <article class="card">
-          <h3>Inventário Florestal</h3>
-          <p>Inventário florestal de espécies nativas e exóticas.</p>
-        </article>
-
-        <article class="card">
-          <h3>Intervenção Ambiental</h3>
-          <p>Autorização para intervenção ambiental com ou sem supressão de vegetação.</p>
-        </article>
-
-        <article class="card">
-          <h3>PRAD / PRADA</h3>
-          <p>Projeto de recuperação de áreas degradadas.</p>
-        </article>
-
-        <article class="card">
-          <h3>PTRF</h3>
-          <p>Projeto técnico de reconstituição da flora.</p>
-        </article>
-
-        <article class="card">
-          <h3>Compensação Ambiental</h3>
-          <p>Elaboração de projetos de compensação ambiental.</p>
-        </article>
-
-        <article class="card">
-          <h3>Reserva Legal e APP</h3>
-          <p>Diagnóstico de reserva legal e área de preservação permanente.</p>
-        </article>
-
-        <article class="card">
-          <h3>Florestas Plantadas</h3>
-          <p>Declaração de colheita de florestas plantadas.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- REGULARIZAÇÃO DE IMÓVEIS -->
-  <section id="regularizacao-imoveis" class="section alt-bg">
-    <div class="container">
-      <div class="section-heading">
-        <span class="section-tag">Categoria</span>
-        <h2>Regularização de Imóveis</h2>
-        <p>
-          Serviços focados em adequação documental, regularização ambiental e organização
-          técnica de propriedades urbanas e rurais.
-        </p>
-      </div>
-
-      <div class="grid three-cols">
-        <article class="card">
-          <h3>Regularização Ambiental</h3>
-          <p>Regularização ambiental de imóveis rurais e urbanos.</p>
-        </article>
-
-        <article class="card">
-          <h3>Cadastro Ambiental Rural</h3>
-          <p>Realização e retificação do Cadastro Ambiental Rural (CAR).</p>
-        </article>
-
-        <article class="card">
-          <h3>Análise de Documentação</h3>
-          <p>Análise de documentação de propriedades urbanas e rurais.</p>
-        </article>
-
-        <article class="card">
-          <h3>Certidões</h3>
-          <p>Obtenção de certidões de registro de imóveis.</p>
-        </article>
-
-        <article class="card">
-          <h3>Órgãos Competentes</h3>
-          <p>Regularização de propriedades junto aos órgãos competentes.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+ 
 
   <!-- PORTFÓLIO -->
   <section id="portfolio" class="section">
@@ -340,95 +289,7 @@
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section id="contato" class="contact-page">
-    <div class="container">
-      <div class="contact-header">
-        <span class="kicker">Fale Conosco</span>
-        <h1>Entre em contato com a Ocotea Ambiental</h1>
-        <p>
-          Tire dúvidas, solicite um orçamento ou fale com nossa equipe.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card contact-info">
-          <h2>Informações de contato</h2>
-
-          <div class="contact-info-list">
-            <div class="contact-info-item">
-              <strong>Telefone</strong>
-              <a href="https://wa.me/5535998870333" target="_blank" rel="noopener">
-                (35) 9 9887-0333
-              </a>
-            </div>
-
-            <div class="contact-info-item">
-              <strong>E-mail</strong>
-              <a href="mailto:atendimento@ocoteaambiental.com.br">
-                atendimento@ocoteaambiental.com.br
-              </a>
-            </div>
-
-            <div class="contact-info-item">
-              <strong>Instagram</strong>
-              <a href="https://www.instagram.com/ocotea.ambiental" target="_blank" rel="noopener">
-                @ocotea.ambiental
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <form id="contactForm" class="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-field">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
-              </div>
-
-              <div class="form-field">
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-field">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
-              </div>
-
-              <div class="form-field">
-                <label for="assunto">Assunto</label>
-                <select id="assunto" name="assunto" required>
-                  <option value="">Selecione</option>
-                  <option value="Orçamento">Orçamento</option>
-                  <option value="Dúvida">Dúvida</option>
-                  <option value="Serviços Ambientais">Serviços Ambientais</option>
-                  <option value="Regularização de Imóveis">Regularização de Imóveis</option>
-                  <option value="Outro">Outro</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva sua necessidade" required></textarea>
-            </div>
-
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary" id="submitBtn">
-                Enviar mensagem
-              </button>
-            </div>
-
-            <p id="formMessage" class="form-message" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+ 
 
 </main>
 

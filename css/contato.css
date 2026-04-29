@@ -3,14 +3,8 @@
   padding: 56px 0;
 }
 
-.contact-header{
-  max-width: 760px;
-  margin: 0 auto 28px;
-  text-align: center;
-}
-
 .contact-header h1{
-  font-size: 38px;
+  font-size: 15px;
   line-height: 1.15;
   margin-bottom: 12px;
 }
@@ -135,6 +129,18 @@
 .btn[disabled]{
   opacity: .7;
   cursor: not-allowed;
+}
+
+.kicker{
+  display:inline-flex;
+  gap: 8px;
+  align-items:center;
+  font-weight: 800;
+  color: var(--brand);
+  background: rgba(47,94,58,.08);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 900px){
